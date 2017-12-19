@@ -1,0 +1,194 @@
+.kol1 {grid-column: span 1}
+.kol2 {grid-column: span 2}
+.kol3 {grid-column: span 3}
+.kol4 {grid-column: span 4}
+.kol5 {grid-column: span 5}
+.kol6 {grid-column: span 6}
+.kol7 {grid-column: span 7}
+.kol8 {grid-column: span 8}
+.kol9 {grid-column: span 9}
+.kol10 {grid-column: span 10}
+.kol11 {grid-column: span 11}
+.kol12 {grid-column: span 12}
+
+.kol12 h1 {font-size: 4em;}
+.kol6 h1 {font-size: 3em;}
+
+@media(max-width: 800px) {
+    .kol1 {grid-column: span 6}
+    .kol2 {grid-column: span 6}
+    .kol3 {grid-column: span 6}
+    .kol4 {grid-column: span 6}
+    .kol5 {grid-column: span 6}
+    .kol6 {grid-column: span 12}
+    .kol7 {grid-column: span 12}
+    .kol8 {grid-column: span 12}
+    .kol9 {grid-column: span 12}
+    .kol10 {grid-column: span 12}
+    .kol11 {grid-column: span 12}
+    .kol12 {grid-column: span 12}
+}
+    footer {
+    	height: 150;
+    }
+
+@media(max-width: 500px) {
+    .kol1 {grid-column: span 12}
+    .kol2 {grid-column: span 12}
+    .kol3 {grid-column: span 12}
+    .kol4 {grid-column: span 12}
+    .kol5 {grid-column: span 12}
+    .kol6 {grid-column: span 12}
+    .kol7 {grid-column: span 12}
+    .kol8 {grid-column: span 12}
+    .kol9 {grid-column: span 12}
+    .kol10 {grid-column: span 12}
+    .kol11 {grid-column: span 12}
+    .kol12 {grid-column: span 12}
+
+    .anonymitet	{
+    	display: none;
+    }
+    .navButtons {
+    	flex-basis: 125px;
+    }
+
+}
+* {
+	margin: 0;
+	padding: 0;	
+	font-family: sans-serif;
+}
+
+		body {
+			background-color: rgb(18, 44, 52);
+		}
+			#container {
+				max-width: 1000px;
+   				min-width: 500px;
+   				margin: 0 auto;
+			}
+			#meny {
+				display: flex;
+				background-color: rgb(18, 44, 52);
+				border: 2px solid lightgrey;
+			}
+			.anonymitet {
+				color: black;
+				background-color: rgb(21, 160, 188);
+				text-decoration: none;
+				text-align: center;
+				flex-basis: 200px;
+				flex-shrink: 0;
+    			flex-grow: 0;
+   				font-size: 30px;
+    			padding: 5px 0;
+			}
+			.navButtons {
+				color: rgb(18, 44, 52);
+   				background-color: white;
+				flex-basis: 200px;
+    			flex-shrink: 1;
+    			flex-grow: 0;
+    			padding: 15px 0;
+   				text-align: center;
+   				text-decoration: none;
+			}
+			.navButtons:hover {
+				background-color: #afafaf;
+				text-decoration: underline;
+			}
+			
+			main {
+				display: grid;
+				grid-template-columns: repeat(12, 1fr);
+				background-color: rgb(246, 245, 245);
+				grid-gap: 10px;
+				margin-top: 10px;
+				padding: 10px;
+				border: 3px solid lightgrey;
+
+			}
+			#introduksjon {
+				display: flex;
+				justify-content: center;
+				border-bottom: 5px solid #545454;
+				padding-bottom: 10px;
+				margin-top: 10px;
+			}
+			#introText {
+				padding: 10px;
+				margin: 40px 0 70px 0;
+
+			}
+			.anonymousIMG {
+				margin-top: 70px;
+			}
+			#imgbreak {
+				grid-column: span 7;
+
+			}
+			h2	{
+				font-weight: normal;
+				line-height: 150%;
+			}
+			img {
+				width: 100%;
+			}
+			#konkButton, #motButton, #forButton	{
+				background-color: #afafaf;
+			}
+/* Når du klikker på elementet så ser du at du har klikket på det */
+			h3 {
+				font-size: 24px;
+				margin: 10px 0 3px 0;
+				line-height: 150%;
+			}
+			h4 {
+				font-size: 25px;
+				margin-bottom: 10px;
+				font-weight: normal;
+			}
+			#kilder {
+				line-height: 150%;
+				border-top: 5px solid #545454;
+				padding-top: 10px;
+				margin-top: 10px;
+				font-style: italic;
+			}
+			.hover {
+				text-decoration: none;
+				color: black;
+			}
+			.hover:hover {
+				text-decoration: underline;
+			}
+			#riotIMG {
+				margin-top: 50px;
+			}
+			#anonymIMG {
+				height: 500px;
+			}
+			#mobbingIMG {
+				margin-top: 25px;
+			}
+
+
+			footer {
+				background-color: #999999;
+				margin-top: 10px;
+			}
+			#pateronIMG {
+				margin-top: 25px;
+			}
+
+			#articlePatreon {
+				padding: 10px;
+			}
+
+			
+			#der {
+				text-align: center;
+				font-size: 20px;
+				padding: 5px;
+			}
